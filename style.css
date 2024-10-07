@@ -59,6 +59,8 @@ ul {
   width: 960px;
   height: 960px;
   background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .square {
