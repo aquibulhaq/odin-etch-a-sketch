@@ -21,6 +21,7 @@ html {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: skyblue;
 }
 
 img,
@@ -52,4 +53,10 @@ h6 {
 ol,
 ul {
   list-style-type: none;
+}
+
+.container {
+  width: 960px;
+  height: 960px;
+  background-color: orange;
 }
