@@ -18,6 +18,21 @@ function createNewGrid(numSquaresPerSide) {
   container.replaceChildren(...squares);
 }
 
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+  let numSquaresPerSide;
+
+  do {
+    const str = prompt('Enter the number of squares per side (1–100): ', 16);
+    if (!str)
+      return;
+
+    numSquaresPerSide = Number(str);
+  } while (isNaN(numSquaresPerSide) || !Number.isInteger(numSquaresPerSide) || numSquaresPerSide < 1 || numSquaresPerSide > 100);
+
+  createNewGrid(numSquaresPerSide);
+})
+
 const container = document.querySelector('.container');
 container.addEventListener('mouseover', blacken);
 
